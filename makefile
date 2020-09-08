@@ -1,6 +1,7 @@
 README.md:
-	#Guessing Game Project
-	##The following is the date and time the makefile was run:
+	#Title of the project
+	echo "Peer-graded Assignment: Bash, Make, Git, and GitHub" >> README.md
+	#Date that make ran
 	date >> README.md
-	##The following is the number of lines of code in guessinggame.sh:
-	wc -l guessinggame.sh >> README.md
+	#Number of lines of code in guessinggame.sh
+	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
